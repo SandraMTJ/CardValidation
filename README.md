@@ -1,4 +1,4 @@
-Bienvenido a mi Primer Proyecto! 
+Bienvenid@ a mi Primer Proyecto! 
 
 VALIDADOR TARJETA CRÉDITO
 ------------------
