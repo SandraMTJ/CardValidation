@@ -1,14 +1,32 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <header></header>
-    <main></main>
-    <footer></footer>
-    <script src="index.js" type="module"></script>
-  </body>
+<head>
+  <script src="index.js" type="module"> </script>
+  <link rel="shortcut icon" href="./img/favicon.png" type="image/x-icon">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,700&display=swap" rel="stylesheet">
+  <title> VALIDADOR DE TARJETA DE CRÉDITO</title>
+</head>
+
+<body>
+  <main class="contenedorTarjeta">
+    <h1>VALIDADOR DE TARJETA DE CRÉDITO</h1>
+    <form>
+      <p>Ingrese número de Tarjeta a validar</p>
+      <div id="mensajeError"></div>
+      <input type="text" id="numTarjeta" pattern="[0-9]*" placeholder="0000 0000 0000 0000" name="tarjeta" maxlength="16" oninput="validity.valid||(value='')">
+        <!--oninput="validity.valid||(value='');" se asegura de que el valor ingresado en un campo de entrada de texto sea válido según las restricciones definidas, y si no es válido, se establece el valor del campo en una cadena vacía para evitar entradas no válidas.-->
+      <input type="button" value="V A L I D A R" id="btnValidar">
+    </form>
+    
+  </main>
+  <section id="contenedorResultado">
+    <h2 id="mensajeValido"></h2>
+    <p id="resultado"></p>
+    
+  </section>
+  <footer>
+    <h3>© C o p y r i g h t , 2023 - Sandra M. Tabares, Proyecto Card validation DEV005 - Laboratoria</h3>
+  </footer>
+</body>
 </html>
