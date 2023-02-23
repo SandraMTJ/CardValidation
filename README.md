@@ -15,6 +15,6 @@ Repositorio GitHub -> https://github.com/SandraMTJ/CardValidation
 
 --------------
 
-Despliegue en GitHub Pages -> sandramtj.github.io/CardValidation/src/index.htm
+Despliegue en GitHub Pages -> sandramtj.github.io/CardValidation/src/index.html
 
 -------------------
