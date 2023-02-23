@@ -12,6 +12,9 @@ Está pensado principalmente para un público en general en el que se requiera v
 -------------------
 
 Repositorio GitHub -> https://github.com/SandraMTJ/CardValidation
+
+--------------
+
 Despliegue en GitHub Pages -> sandramtj.github.io/CardValidation/src/index.htm
 
 -------------------
