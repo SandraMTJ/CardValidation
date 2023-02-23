@@ -1,0 +1,101 @@
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0%;
+}
+html{
+    font-family: "Roboto";
+    font-size: 16px;
+    background-color: #ffffff;    
+
+}
+
+h1{
+    font-family: "Roboto";
+    font-size: 45px;
+    color: white;
+    background-color: #0d0245;
+    padding: 30px 0 30px 0;
+}
+
+h2{
+    margin-top: 50px;
+    color: white;
+    font-family: "Roboto";
+    padding: 30px 0 30px 0;
+    font-size: 30px;
+}
+
+h3{
+    width: 100%;
+    font-family: "Roboto";
+    font-size: 15px;
+    color: rgb(56, 54, 54);
+    background-color: #bcb4e7;
+    padding: 5px 0 5px 0;
+    text-align: center;
+    position: absolute;
+    bottom: 0;
+}   
+
+.contenedorTarjeta {
+    text-align: center;
+    
+}
+
+.contenedorTarjeta p{
+   
+    padding: 25px;
+    font-size: 35px;
+    text-align: center;
+}
+.contenedorTarjeta input{
+    padding: 20px;
+    width: 30%;
+    height: 14%;
+    font-family: "Roboto";
+    font-size: 30px;
+    text-align: center;
+    border-radius: 5px; 
+    border-color: #444343;   
+}
+.btnValidar{
+    margin: 25px;
+    padding: 8px;
+    width: 35%;
+    font-family: "Roboto";
+    font-size: 15px;
+    border-radius: 5px;
+    border-color: #444343;
+    background-color: #1d012b;  
+   
+}
+
+.btnValidar button:hover{
+    margin: 25px;
+    padding: 8px;
+    width: 12%;
+    font-family: "Roboto";
+    font-size: 15px;
+    border-radius: 5px;
+    background-color: #3f5df8;
+    color: #efeded;
+    font-weight: 600;
+    border-color: #444343;
+    border-style: double;
+}
+
+section {
+    margin-top: 5%;
+    background-image: url("./img/imgTarjeta.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 300px;
+    padding: 25px;
+    font-size: 35px;
+    text-align: center;
+}
+
+section p {
+    background-color: white;   
+}
