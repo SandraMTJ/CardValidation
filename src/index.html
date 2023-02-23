@@ -14,7 +14,7 @@
     <form>
       <p>Ingrese número de Tarjeta a validar</p>
       <div id="mensajeError"></div>
-      <input type="text" id="numTarjeta" pattern="[0-9]*" placeholder="0000 0000 0000 0000" name="tarjeta" maxlength="16" oninput="validity.valid||(value='')">
+      <input type="text" id="numTarjeta" pattern="[0-9]*" placeholder="0000 0000 0000 0000" name="tarjeta" maxlength="16" onkeypress="validity.valid||(value='')" required title="Por favor, ingrese número" onclick="validar()">
         <!--oninput="validity.valid||(value='');" se asegura de que el valor ingresado en un campo de entrada de texto sea válido según las restricciones definidas, y si no es válido, se establece el valor del campo en una cadena vacía para evitar entradas no válidas.-->
       <input type="button" value="V A L I D A R" id="btnValidar">
     </form>

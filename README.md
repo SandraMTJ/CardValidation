@@ -10,3 +10,8 @@ El programa funciona basado en el algoritmo de luhn para identificar si una tarj
 Está pensado principalmente para un público en general en el que se requiera validar de una forma ágil la tarjeta de crédito sin tener que hacer la operación a papel de dicho procedimiento.
 
 -------------------
+
+Repositorio GitHub -> https://github.com/SandraMTJ/CardValidation
+Despliegue en GitHub Pages -> sandramtj.github.io/CardValidation/src/index.htm
+
+-------------------

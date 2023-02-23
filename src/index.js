@@ -6,6 +6,7 @@ function validate() {
     
   const numTarjeta = document.getElementById('numTarjeta').value;//Variable que llama valor id del input 'numTarjeta'
   const valid = validator.isValid(numTarjeta);// Se crea variable 'valid' que llama al método 'isValid' de objeto validador, para pasar # de tarjeta obtenido y devolver valor booleano
+  
 
   //Se crea condicional, si variable 'valid' es true, se ejecuta acción o sino ('else')
   if (valid){
@@ -13,6 +14,8 @@ function validate() {
   } else {
     document.getElementById('mensajeValido').innerHTML = 'Número de tarjeta inválido';
   }}
+
+
   
 // Obtener referencia al botón y al Mensaje de resultado
 const btnEnmascaramiento = document.getElementById('btnValidar'); //Variable 'btnEnmascaramiento' para llamar id de boton ('btnValidar')
@@ -45,8 +48,26 @@ campoInput.addEventListener("input", () => { //El evento "input" se dispara cada
     mensajeError.textContent = "Solo se permiten números";
   } else {
     mensajeError.textContent = "";
-  }
+  } 
+
+
+  
+
 });
   
+function validar() {
+  const campoInput = document.getElementById("numTarjeta").value;
+  const mensajeError = document.getElementById("mensajeError");
+  if (campoInput == "") {
+    document.getElementById('mensajeError').innerHTML = 'Por favor, ingrese número a validar.';
+    return false;
+  } else {
+    mensajeError.innerHTML = "";
+    return true;
+  }
+}
+
+
+
 
 console.log(validator);
