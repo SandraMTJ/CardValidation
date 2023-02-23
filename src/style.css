@@ -38,6 +38,12 @@ h3{
     bottom: 0;
 }   
 
+.mensajeError{
+    font-size: 15px;
+    background-color: red;
+    color: white;
+}
+
 .contenedorTarjeta {
     text-align: center;
     
