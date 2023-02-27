@@ -1,8 +1,8 @@
 /* eslint-disable no-console */
 import validator from './validator.js';
 
-//En cuanto usuario da click a boton se activa función validate
-function validate() {
+//En cuanto usuario da click a boton se activa función validar
+function validar() {
 
   const campoInput = document.getElementById("numTarjeta");
 
@@ -21,7 +21,7 @@ function validate() {
     } else {
       document.getElementById('mensajeValido').innerHTML = 'Número de tarjeta inválido';
     }
-    enmascarar();
+    enmascarar(); //se llama a la función enmascarar() para enmascarar el número de tarjeta de crédito.
   }
 }
 
@@ -29,7 +29,7 @@ function enmascarar() {
 
   document.getElementById('mensajeError').innerHTML = ""; //Si el valor del (input) es válido, se establece el mensaje de error en blanco en el elemento con el id "mensajeError".
   const numTarjeta = numTarjetaInput.value;
-  //Se llama la función maskify para ocultar los caracteres del número de tarjeta, excepto los últimos cuatro, El resultado se asigna a la variable numEnmascarado.
+  //Se llama el método maskify para ocultar los caracteres del número de tarjeta, excepto los últimos cuatro, El resultado se asigna a la variable numEnmascarado.
   const numEnmascarado = validator.maskify(numTarjeta);
   if (numEnmascarado === 'Número de tarjeta inválido') {
     resultado.innerHTML = 'Número de tarjeta inválido';
@@ -45,12 +45,12 @@ const numTarjetaInput = document.getElementById('numTarjeta');
 const resultado = document.getElementById('resultado'); //Variable 'resultado' para llamar id de elemento ('resultado')
 
 const btnValidar = document.getElementById('btnValidar'); //Variable 'btnValidar' para llamar id de boton ('btnValidar')
-btnValidar.addEventListener('click', validate); //Se agrega evento al boton para que al dar click active función 'validate'
+btnValidar.addEventListener('click', validar); //Se agrega evento al boton para que al dar click active función 'validate'
 
 //Función para que solo permita números y no letras o caracteres especiales
 const campoInput = document.getElementById("numTarjeta");
 const mensajeError = document.getElementById("mensajeError");
-const mensajeValidonull = document.getElementById('mensajeValido');
+const mensajeValidoNull = document.getElementById('mensajeValido');
 
 campoInput.addEventListener("input", () => { //El evento "input" se dispara cada vez que el usuario ingresa texto en el campo de entrada
   if (campoInput.validity.patternMismatch) { //Se verifica si el valor actual del campo de entrada no coincide con el patrón especificado en el atributo 'pattern' del campo de entrada. En este caso, el patrón debe permitir solo caracteres numéricos. Si el valor actual del campo de entrada no coincide con el patrón, la condición del if se evalúa como true
@@ -58,7 +58,7 @@ campoInput.addEventListener("input", () => { //El evento "input" se dispara cada
     document.getElementById("numTarjeta").value = "";
   } else {
     mensajeError.textContent = "";
-    mensajeValidonull.textContent = "";
+    mensajeValidoNull.textContent = "";
   }
 });
 
