@@ -1,5 +1,5 @@
 const validator = {
-  isValid(numTarjeta) {
+  isValid: function(numTarjeta) {
     {
       const reversar = numTarjeta.toString().split("").reverse(); //Se convierte a cadena de caracteres, se invierte y se separa
       let total = 0; // Calcula la suma de los dígitos de la tarjeta de crédito y se almacena en variable
@@ -24,7 +24,7 @@ const validator = {
     }
   },
   //Ocultar los dígitos del número menos los últimos 4
-  maskify(numTarjeta) { //La función maskify toma el argumento 'numTarjeta'
+  maskify: function(numTarjeta) { //La función maskify toma el argumento 'numTarjeta'
     
     let numEnmascarado = ""; //Se toma variable 'numEnmascarado' como cadena de texto vacía, que se usará para almacenar los primeros dígitos del número ingresado
     const cuatroDigitos = numTarjeta.slice(-4); //Se extraen los últimos cuatro dígitos con el método slice(-4) devolviendo los ultimos 4 caracteres 
