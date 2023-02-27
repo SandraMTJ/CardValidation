@@ -45,7 +45,7 @@ const numTarjetaInput = document.getElementById('numTarjeta');
 const resultado = document.getElementById('resultado'); //Variable 'resultado' para llamar id de elemento ('resultado')
 
 const btnValidar = document.getElementById('btnValidar'); //Variable 'btnValidar' para llamar id de boton ('btnValidar')
-btnValidar.addEventListener('click', validar); //Se agrega evento al boton para que al dar click active función 'validate'
+btnValidar.addEventListener('click', validar); //Se agrega evento al boton para que al dar click active función 'validar'
 
 //Función para que solo permita números y no letras o caracteres especiales
 const campoInput = document.getElementById("numTarjeta");
