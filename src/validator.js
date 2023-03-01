@@ -29,7 +29,7 @@ const validator = {
     let numEnmascarado = ""; //Se toma variable 'numEnmascarado' como cadena de texto vacía, que se usará para almacenar los primeros dígitos del número ingresado
     const cuatroDigitos = numTarjeta.slice(-4); //Se extraen los últimos cuatro dígitos con el método slice(-4) devolviendo los ultimos 4 caracteres 
     
-    //Se utiliza un bucle 'for' para recorrer los dígitos de la tarjeta de crédito desde el primer dígito hasta el cuarto dígito desde el final. En cada iteración del bucle, se añade un carácter "#" a la cadena maskedNumber.
+    //Se utiliza un bucle 'for' para recorrer los dígitos de la tarjeta de crédito desde el primer dígito hasta el cuarto dígito desde el final. En cada iteración del bucle, se añade un carácter "#" a la cadena numEnmascarado.
     for (let i = 0; i < numTarjeta.length - 4; i++) {
       i < numTarjeta.length - 4 
       numEnmascarado += "#"; 
